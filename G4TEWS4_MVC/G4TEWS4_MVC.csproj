@@ -5,6 +5,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\images\travel-Deals.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\travel-Deals.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.PowerBI.Api" Version="3.28.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\G4TEWS4_Data\G4TEWS4_Data.csproj" />
   </ItemGroup>
 
