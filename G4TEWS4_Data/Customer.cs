@@ -49,6 +49,12 @@ namespace G4TEWS4_Data
         [StringLength(50)]
         public string CustEmail { get; set; }
         public int? AgentId { get; set; }
+       
+        [Required]
+        [StringLength(15)]
+        public string CustUserName { get; set; }
+        [Required]
+        public string CustPassword { get; set; }
 
         [ForeignKey(nameof(AgentId))]
         [InverseProperty("Customers")]
